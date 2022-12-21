@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Heebo:wght@500&family=Roboto&display=swap');
+
+
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding-top: 20px;
+
+
+}
+
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: #fcecec;
+
+
+}
+
+.info-text p {
+
+    font-style: italic;
+
+
+}
+
+h1 {
+    letter-spacing: 1.5px;
+}
+
+.card {
+    border: 2px solid rgb(239, 207, 246);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    /*перенесли текст справа от фото*/
+}
+
+.info-text {
+    margin-left: 20px;
+    /*отодвинули текст от фото*/
+}
+
+.bg-pink {
+    background-color: rgb(242, 216, 242);
+
+
+}
+
+.bg-plum {
+    background-color: rgb(216, 175, 216);
+
+}
+
+.avatar {
+    width: 200px;
+    height: 270px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+
+}
+
+a {
+    color: rgb(120, 188, 183);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: darkorchid;
+    font-size: 15px;
+
+}
+
+
+
+a:active {
+    color: salmon;
+}
+
+
+/*a:visited {
+    color: gray;
+
+}
+*/
+.btn {
+    background: purple;
+    padding: 15px 20px;
+    color: pink;
+    border-radius: 4px;
+
+
+
+}
+
+.list li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    /*убрали пустые места между ячейками*/
+    border: 2px solid grey;
+    /*увеличенная толщина внешней границы таблицы*/
+
+
+
+}
+
+
+th,
+td {
+    border: 1px solid grey;
+    padding-bottom: 5px;
+    /*увеличили высоту ячеек*/
+
+}
+
+
+
+td:nth-child(2) {
+    background-color: rgb(233, 183, 250);
+}
+
+.form h2 {
+
+    text-align: center;
+    /*центрировали заголовок*/
+
+
+
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    /*2 способ*/
+
+}
+
+.form-row .form-group {
+    /*display: inline-block;
+    /*1 способ имя и имейл в линию*/
+    margin-right: 20px;
+    width: 50%;
+    /*2 способ*/
+    /* width: calc(50%-20px);
+    /*1 способ чтобы уместились имя и имейл по ширине*/
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+    /*в последнем элементе убрали отступ, чтобы уместилось в линию*/
+
+}
+
+@media(max-width:650px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+/*мой способ сдвинуть текст слева от фото*/
+.info-text {
+    width: 60%;
+    /*border: 1px solid black;*/
+    margin-left: 20px;
+    display: inline-block;
+    /*box-sizing: border-box;*/
+}
+
+.form-group label {
+    display: block;
+    /*т.к. label изначально инлайн-элемент*/
+    font-size: 14px;
+    color: #86898f;
+
+
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    /*прозрачное*/
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    /*удалить линию в полле воода*/
+    font-family: inherit;
+    /*берет свойства родительского элемента*/
+
+}
+
+@media (max-width:600px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+}
